@@ -1,0 +1,27 @@
+	produtos	redirecionar_de	versões	título curto
+Trabalhando com o registro do Docker
+{% ifversion fpt or ghec %}O registro do Docker agora foi substituído pelo {% data variables.product.prodname_container_registry %}.{% else %}Você pode enviar e receber suas imagens do Docker usando o {% data variables.product. prodname_registry %} Registro do Docker.{% endif %}
+{% data reusables.gated-features.packages %}
+/articles/configurando-docker-para-usar-com-github-package-registry
+/github/managing-packages-with-github-package-registry/configurando-docker-for-use-with-github-package-registry
+/github/managing-packages-with-github-packages/configuring-docker-for-use-with-github-packages
+/packages/usando-github-packages-with-your-projects-ecosystem/configurando-docker-para-usar-com-github-packages
+/packages/guides/container-guides-for-github-packages/configurando-docker-para-usar-com-github-packages
+/packages/guides/configurando-docker-para-usar-com-github-packages
+fpt	ghes	ghae	ghec
+*
+*
+*
+*
+Registro do Docker
+{% ifversion fpt ou ghec %}
+
+O registro do Docker de {% data variables.product.prodname_dotcom %} (que usava o namespace docker.pkg.github.com) foi substituído pelo {% data variables.product.prodname_container_registry %} (que usa o namespace https://ghcr.io). O {% data variables.product.prodname_container_registry %} oferece benefícios como permissões granulares e otimização de armazenamento para imagens do Docker.
+
+As imagens do Docker armazenadas anteriormente no registro do Docker estão sendo migradas automaticamente para o {% data variables.product.prodname_container_registry %}. Para obter mais informações, consulte " AUTOTITLE " e " AUTOTITLE ".
+
+{% outro %}
+
+{% data reusables.package_registry.packages-ghes-release-stage %} {% data reusables.package_registry.packages-ghae-release-stage %}
+
+{% data reusables.package_registry.admins-can-configure-package-types %}
